@@ -1,4 +1,4 @@
-package chapter1.test;
+package chapter1.method;
 
 public class TestCalculator {
     int sum (int value1, int value2) {

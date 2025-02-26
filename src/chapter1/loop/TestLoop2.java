@@ -1,4 +1,4 @@
-package chapter1.test;
+package chapter1.loop;
 
 public class TestLoop2 {
     public static void main(String[] args) {
