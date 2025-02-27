@@ -1,4 +1,4 @@
-package chapter2.calzz;
+package chapter2.clazz;
 
 public class Main {
     public static void main(String[] args) {

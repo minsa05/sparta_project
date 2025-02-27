@@ -2,7 +2,7 @@ package chapter1.method;
 
 import java.util.Scanner;
 
-public class TestMethod {
+public class TestMethodLv1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
