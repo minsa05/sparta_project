@@ -37,4 +37,7 @@ public class TestCalculatorLv2 {
         result = 0;
         System.out.println("결과가 초기화되었습니다.");
     }
+
+    public void saveResult() {
+    }
 }

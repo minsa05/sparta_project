@@ -8,6 +8,7 @@ public class TestMethodLv2 {
         TestCalculatorLv2 calculator = new TestCalculatorLv2();
 
         while (true) {
+            System.out.println("현재 저장된 연산 결과: " + calculator.getResult());
             System.out.println(" 계산기 프로그램 ");
             System.out.print("첫 번째 숫자를 입력해주세요: ");
             int a = sc.nextInt();
@@ -27,22 +28,22 @@ public class TestMethodLv2 {
             switch (operator) {
                 case "1":
                 case "+":
-                    calculator.plus(a, b);
+                    result = calculator.plus(a, b);
                     break;
                 case "2":
                 case "-":
-                    calculator.minus(a, b);
+                    result = calculator.minus(a, b);
                     break;
                 case "3":
                 case "*":
-                    calculator.multiply(a, b);
+                    result = calculator.multiply(a, b);
                     break;
                 case "4":
                 case "/":
                     if (b == 0) {
                         System.out.println("오류: 0으로 나눌 수 없습니다.");
                     } else {
-                        calculator.divide(a, b);
+                        result = calculator.divide(a, b);
                     }
                     break;
                 default:
