@@ -1,10 +1,9 @@
 package chapter1.method;
 
 public class TestCalculatorLv2 {
-
     private int result;
 
-
+    // 연산 기호에 따른 계산하고 값을 리턴
     public int plus(int a, int b) {
         result = a + b;
         return result;
@@ -29,15 +28,14 @@ public class TestCalculatorLv2 {
         return result;
     }
 
+    // 결과값 가져오기
     public int getResult() {
         return result;
     }
 
+    // 결과 삭제
     public void removeResult() {
         result = 0;
         System.out.println("결과가 초기화되었습니다.");
-    }
-
-    public void saveResult() {
     }
 }

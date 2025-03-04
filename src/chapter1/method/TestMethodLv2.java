@@ -10,11 +10,12 @@ public class TestMethodLv2 {
         while (true) {
             System.out.println("현재 저장된 연산 결과: " + calculator.getResult());
             System.out.println(" 계산기 프로그램 ");
+            // 연산 입력
             System.out.print("첫 번째 숫자를 입력해주세요: ");
             int a = sc.nextInt();
             System.out.print("두 번째 숫자를 입력해주세요: ");
             int b = sc.nextInt();
-
+            // 연산자 선택
             System.out.println("1  +  더하기");
             System.out.println("2  -  빼기");
             System.out.println("3  *  곱하기");
@@ -24,7 +25,7 @@ public class TestMethodLv2 {
             String operator = sc.next();
             int result = 0;
 
-
+            // 연산 기호에 따른 계산
             switch (operator) {
                 case "1":
                 case "+":
@@ -51,9 +52,13 @@ public class TestMethodLv2 {
                     continue;
             }
 
+            //연산 결과
             System.out.println("연산 결과: " + result);
+
+            // 저장된 연산
             System.out.println("저장된 연산결과: " + calculator.getResult());
 
+            // 저장된 연산 결과 제거 여부
             System.out.println("마지막 저장된 결과를 제거하시겠습니까? (yes 입력시 삭제)");
             String answer = sc.next();
             if (answer.equals("yes")) {
@@ -61,6 +66,7 @@ public class TestMethodLv2 {
                 System.out.println("결과 삭제 후: " + calculator.getResult());
             }
 
+            // 반복 여부
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료): ");
             answer = sc.next();
             if (answer.equals("exit")) {
