@@ -21,6 +21,7 @@ public class TestMethodLv2 {
             System.out.print("연산 기호 또는 숫자를 입력하세요: ");
 
             String operator = sc.next();
+            int result = 0;
 
 
             switch (operator) {
@@ -49,8 +50,18 @@ public class TestMethodLv2 {
                     continue;
             }
 
-            System.out.println("더 계산하시겠습니까? (exit 입력 시 종료): ");
+            System.out.println("연산 결과: " + result);
+            System.out.println("저장된 연산결과: " + calculator.getResult());
+
+            System.out.println("마지막 저장된 결과를 제거하시겠습니까? (yes 입력시 삭제)");
             String answer = sc.next();
+            if (answer.equals("yes")) {
+                calculator.removeResult();
+                System.out.println("결과 삭제 후: " + calculator.getResult());
+            }
+
+            System.out.println("더 계산하시겠습니까? (exit 입력 시 종료): ");
+            answer = sc.next();
             if (answer.equals("exit")) {
                 System.out.println("프로그램을 종료합니다.");
                 break;

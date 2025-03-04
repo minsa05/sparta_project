@@ -1,27 +1,40 @@
 package chapter1.method;
 
 public class TestCalculatorLv2 {
-    int plus (int a, int b) {
-        int result = a + b;
-        System.out.println("더하기 결과: " + result);
+
+    private int result;
+
+
+    public int plus(int a, int b) {
+        result = a + b;
         return result;
     }
-    int minus (int a, int b) {
-        int result = a - b;
-        System.out.println("빼기 결과: " + result);
+
+    public int minus(int a, int b) {
+        result = a - b;
         return result;
     }
-    int multiply (int a, int b) {
-        int result = a * b;
-        System.out.println("곱하기 결과: " + result);
+
+    public int multiply(int a, int b) {
+        result = a * b;
         return result;
     }
-    int divide (int a, int b) {
-        int result = a / b;
+
+    public int divide(int a, int b) {
         if (b == 0) {
             System.out.println("잘못된 입력입니다.");
+            return 0;
         }
-        System.out.println("나누기 결과: " + result);
+        result = a / b;
         return result;
+    }
+
+    public int getResult() {
+        return result;
+    }
+
+    public void removeResult() {
+        result = 0;
+        System.out.println("결과가 초기화되었습니다.");
     }
 }
